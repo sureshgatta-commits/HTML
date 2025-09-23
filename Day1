@@ -1,0 +1,92 @@
+------------------------------------------------Day 1 of HTML(September 19, 2025)------------------------------------------------------
+
+# 🌐 Day 1 of HTML
+
+📌 What is a Website?
+
+* A Website is a collection of web pages.
+  Example: Home, About, Contact pages.
+
+---
+
+📌 Elements in a Webpage
+
+Some common elements we can create in a webpage are:
+
+* Button
+* Image
+* Video
+* Text
+* Scrollable text
+* Icons
+* Background image
+* Paragraph
+* Heading
+
+We use HTML tags to create these elements.
+
+---
+
+### 📌 Important Points
+
+* HTML is case-insensitive → <H1> and <h1> mean the same.
+* Headings in HTML:
+
+  * <h1> (largest/most important) → <h6> (smallest/least important).
+
+---
+
+### 📌 Commonly Used Tags
+
+* <b> → Bold text
+* <i> → Italic text
+* <em> → Emphasized text (similar to italic, but more meaningful)
+* <strong> → Strong importance (similar to bold, but more meaningful)
+* <small> → Smaller text
+* <br> → Line break
+
+
+
+### Practiced Code in Class
+
+
+<html> 
+
+  <h1>This is the first day of our HTML course. It is interesting</h1>
+  <h2>This is the first day of our HTML course. It is interesting</h2>
+  <h3>This is the first day of our HTML course. It is interesting</h3>
+  <h4>This is the first day of our HTML course. It is interesting</h4>
+  <h5>This is the first day of our HTML course. It is interesting</h5>
+  <h6>This is the first day of our HTML course. It is interesting</h6>
+
+  <p><b>This is the first day</b> of our HTML course. It is interesting</p>
+
+  <b>This is the first day of our HTML course. It is interesting (bold)</b>
+  <br>
+
+  <i>This is the first day of our HTML course. It is interesting (italic)</i>
+  <br>
+
+  <small>This is the first day of our HTML course. It is interesting (small)</small>
+  <br>
+
+  <strong>This is the first day of our HTML course. It is interesting (strong)</strong>
+  <br>
+
+  <em>This is the first day of our HTML course. It is interesting (em)</em>
+  <br>
+
+  <button>Click me</button>
+  <br> 
+
+  <img src="PK.jpg">
+  <img src="https://static.toiimg.com/thumb/msid-110723572,imgsize-1551804,width-400,resizemode-4/110723572.jpg">
+  <br>
+
+  <a href="https://google.com" target="_new">Go to Google</a>
+
+</html>
+
+
+
+
