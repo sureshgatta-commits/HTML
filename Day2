@@ -1,0 +1,155 @@
+
+
+## VS Code Extensions and Shortcuts
+
+### Live Server Extension
+The Live Server extension is essential for web development. It creates a local development server with live reload capability.
+
+**Key Features:**
+- Automatically refreshes the browser when you save changes to your HTML, CSS, or JavaScript files
+- Eliminates the need to manually refresh the page after each change
+- Provides a local server environment for testing your web pages
+
+**How to use:**
+1. Install Live Server from VS Code extensions
+2. Right-click on your HTML file
+3. Select "Open with Live Server"
+4. Your default browser will open with the page, and it will auto-refresh on save
+
+### Code Formatting
+VS Code provides excellent code formatting tools to keep your code clean and readable.
+
+**Format Document:**
+- Right-click anywhere in your code editor
+- Select "Format Document" or use shortcut Shift + Alt + F
+- This automatically indents and organizes your code properly
+
+### Commenting Shortcuts
+Efficient commenting helps in code documentation and debugging.
+
+**Keyboard Shortcuts:**
+- Comment code: Ctrl + K then Ctrl + C
+- Uncomment code: Ctrl + K then Ctrl + U
+- These shortcuts work for HTML, CSS, and JavaScript comments
+
+---
+
+## HTML Lists
+
+Lists are used to group related pieces of information together, making content more organized and readable.
+
+### 1. Unordered List (Bulleted List)
+Unordered lists are used when the order of items doesn't matter. They display items with bullet points.
+
+<ul>
+  <li>MSBI</li>
+  <li>Datascience</li>
+  <li>DotNetFullStack</li>
+</ul>
+
+
+### 2. Ordered List (Numbered List)
+Ordered lists are used when the sequence of items is important. They can display numbers, letters, or Roman numerals.
+
+
+<ol type="1">
+  <li>MSBI
+    <ol>
+      <li><b>SQL</b></li>
+      <li><b>SSIS</b></li>
+      <li><b>SSRS</b></li>
+    </ol>
+  </li>
+  <li>Datascience
+    <ol type="a">
+      <li>Python</li>
+      <li>ML</li>
+    </ol>
+  </li>
+  <li>DotNetFullStack
+    <ol type="I">
+      <li>WebAPI</li>
+      <li>Angular</li>
+    </ol>
+  </li>
+</ol>
+
+
+**Ordered List Type Attributes:**
+- `type="1"` - Decimal numbers (1, 2, 3...)
+- `type="A"` - Uppercase letters (A, B, C...)
+- `type="a"` - Lowercase letters (a, b, c...)
+- `type="I"` - Uppercase Roman numerals (I, II, III...)
+- `type="i"` - Lowercase Roman numerals (i, ii, iii...)
+
+### 3. Description List (Definition List)
+Description lists are used for terms and their definitions, like in a dictionary.
+
+
+<dl>
+  <dt>MSBI</dt>
+  <dd>Microsoft Business Intelligence</dd>
+  
+  <dt>HTML</dt>
+  <dd>Hyper Text Markup Language</dd>
+</dl>
+
+
+**Description List Elements:**
+- `<dl>` - Defines the description list
+- `<dt>` - Defines the term/name
+- `<dd>` - Provides the definition/description
+
+
+## Nested Lists
+
+Nested lists allow you to create hierarchical structures by placing lists inside other lists.
+
+<ul>
+  <li>
+    <h2>Frontend</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS
+        <ul>
+          <li>onsubmit Attribute</li>
+          <li>onclick Attribute</li>
+        </ul>
+      </li>
+      <li>JavaScript</li>
+    </ul>
+  </li>
+  <li>
+    <h2>Library/Framework</h2>
+    <ul>
+      <li>ReactJS
+        <ul>
+          <li>Hoisting</li>
+          <li>Props</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+
+## HTML Element Types
+
+### Inline Elements
+Inline elements flow within the text content and do not start on a new line. They only take up as much width as necessary.
+
+**Examples:** `<span>`, `<a>`, `<strong>`, `<em>`, `<img>`, `<code>`
+
+### Block-level Elements
+Block-level elements always start on a new line and take up the full width available.
+
+**Examples:** `<div>`, `<p>`, `<h1>-<h6>`, `<ul>`, `<ol>`, `<li>`, `<table>`
+
+---
+
+## Best Practices
+
+1. **Use proper indentation** for nested lists to maintain readability
+2. **Choose the right list type** based on your content needs
+3. **Keep list items concise** and focused on single concepts
+4. **Use semantic HTML** to improve accessibility and SEO
