@@ -1,5 +1,28 @@
 ------------------------------------------------Day 1 of HTML(September 19, 2025)------------------------------------------------------
 
+
+HTML - HyperText Markup Language.
+
+
+HTML is the foundational building block of the web. 
+
+It provides the skeleton or structural layer of a webpage, defining its content and basic layout.
+
+While you can write HTML code in a simple text file (and save it with a .html extension), the best practice is to use a dedicated code editor like Visual Studio Code (VS Code).
+
+Editors like VS Code provide essential features such as syntax highlighting, auto-completion, and error detection, which make writing code faster and less error-prone.
+
+
+
+
+
+
+Assignments :-
+
+Install VSCode and send me the screenshot.
+
+Explore some extensions in VSCode to look code beautifully.
+
 # 🌐 Day 1 of HTML
 
 📌 What is a Website?
