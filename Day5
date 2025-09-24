@@ -1,0 +1,498 @@
+-------------------------------------Sample HTML Form------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+
+<body>
+    <h2>Employee Information Form</h2>
+
+    <form>
+
+        <fieldset>
+            <legend>
+                <h1><b><i>Personal Details</i></b></h1>
+            </legend>
+            <label for="empid">EmployeeID</label>
+            <input type="text" id="empid" value="E12345" readonly required>
+            <br>
+            <br>
+            <label for="firstName">First Name :</label>
+            <input type="text" id="firstName" placeholder="Enter your firstname" autofocus required>
+            <br>
+            <br>
+            <label for="lasttName">last Name :</label>
+            <input type="text" id="lastName" placeholder="Enter your Lastname" autofocus required>
+            <br><br>
+            <label for="dob">Enter your DOB</label>
+            <input type="date" id="dob" min="2005-01-01" required>
+            <br><br>
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required> Male
+            <input type="radio" id="female" name="gender" value="female" required> FeMale
+            <input type="radio" id="other" name="gender" value="Other" required> Other
+            <br><br>
+
+            <label for="contact">Enter your number</label>
+            <input type="tel" id="contact" placeholder="9876543210" pattern="[0-9]{10}" maxlength="10" required>
+            <br><br>
+            <label>Enter your email</label>
+            <input type="email" id="email" placeholder="Eg: suresh@gmail.com" required>
+            <br><br>
+
+        </fieldset>
+
+        <!-- Address Section -->
+        <br><br>
+        <fieldset>
+            <h1><b><i>Address</i></b></h1>
+            <label for="permanentAddress">permanentAddress</label>
+            <textarea id="permanentAddress" rows="3" cols="40" required>
+        </textarea>
+            <br><br>
+
+            <label for="state">state</label>
+            <select id="state" required>
+                <option value="">--Enter your state--</option>
+                <option value="KA">Karnataka</option>
+                <option value="AP">Andhrapradesh</option>
+
+            </select>
+            <br><br>
+            <!--Experience Details -->
+        </fieldset>
+
+        <br><br>
+        <fieldset>
+            <legend>
+                <h1><b><i>Professional Details</i></b></h1>
+            </legend>
+            <label id="doj">Date of Joining</label>
+            <input type="date" id="doj" required><br><br>
+
+            <label for="exp">Total Experience in years</label>
+            <input type="number" id="exp" min="0" max="40" required> <br><br>
+
+            <label for="resume">Upload your Resume</label>
+            <input type="file" id="resume" accept=".pdf,.doc,.docx" multiple required> <br><br>
+
+        </fieldset>
+
+
+        <!-- Bank Details -->
+
+        <fieldset>
+            <legend>
+                <h1><b><i>Bank Details</i></b></h1>
+            </legend>
+
+            <label for="bankName">BankName</label>
+            <input type="text" id="bankName" name="bankName" required><br><br>
+
+            <label for="accountNumber"> AccountNumber</label>
+            <input type="number" id="accountNumber" name="accountNumber" required
+                title="Enter your Account number"><br><br>
+
+            <label>IFSC</label>
+            <input type="text" id="ifsc" name="ifsc" pattern="[A-Z]{4}0[0-9A-Z]{6}" placeholder="HDFC0001234" required
+                title="Enter your IFSC"><br><br>
+        </fieldset>
+
+        <!--Declarqations-->
+        <fieldset>
+            <legend>
+                <h1><b><i>Declarations</i></b></h1>
+            </legend>
+
+
+            <input type="checkbox" id="declare" name="declare" required>
+            <label for="declare">I here by declare that the Information is accurate </label>
+        </fieldset>
+
+
+
+        <button type="submit">Submit Form</button>
+        <button type="reset">Reset Form</button>
+
+    </form>
+</body>
+
+</html>
+
+------------------------------------------------Tables -------------------------------------------------
+
+# HTML Tables - Complete Guide
+
+## Importance of Tables
+
+**Real-time Definition:** Tables are used to display data in a structured, row-and-column format. In real-world applications, they organize information systematically for easy reading and comparison.
+
+**Real-time Use Cases:**
+- Employee databases and directories
+- Product catalogs with prices
+- Student grade reports
+- Financial statements and reports
+- Inventory management systems
+- Timetables and schedules
+- Comparison charts
+
+---
+
+## Basic Table Structure
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables Complete Guide</title>
+</head>
+<body>
+    <h1>HTML Tables - Complete Reference</h1>
+
+    <!-- Basic Employee Table -->
+    <h2>1. Basic Employee Table</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>EmpId</th>
+                <th>EmpName</th>
+                <th>Department</th>
+                <th>Salary</th>
+                <th>Join Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>Radhika Sharma</td>
+                <td>Development</td>
+                <td>$75,000</td>
+                <td>2023-01-15</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Dhanoj Kumar</td>
+                <td>Testing</td>
+                <td>$65,000</td>
+                <td>2023-03-20</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>Shankar Patel</td>
+                <td>Design</td>
+                <td>$70,000</td>
+                <td>2023-02-10</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3"><strong>Total Employees</strong></td>
+                <td colspan="2"><strong>3</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Student Report Card -->
+    <h2>2. Student Report Card</h2>
+    <table border="1">
+        <caption><strong>Annual Examination Results - 2024</strong></caption>
+        <thead>
+            <tr>
+                <th>Roll No</th>
+                <th>Student Name</th>
+                <th>Mathematics</th>
+                <th>Science</th>
+                <th>English</th>
+                <th>Total</th>
+                <th>Percentage</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Alice Johnson</td>
+                <td>95</td>
+                <td>88</td>
+                <td>92</td>
+                <td>275</td>
+                <td>91.67%</td>
+                <td>A+</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Bob Smith</td>
+                <td>78</td>
+                <td>85</td>
+                <td>80</td>
+                <td>243</td>
+                <td>81.00%</td>
+                <td>B+</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Carol Davis</td>
+                <td>92</td>
+                <td>90</td>
+                <td>87</td>
+                <td>269</td>
+                <td>89.67%</td>
+                <td>A</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Product Catalog -->
+    <h2>3. E-commerce Product Catalog</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Stock</th>
+                <th>Rating</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>P001</td>
+                <td>Wireless Mouse</td>
+                <td>Electronics</td>
+                <td>$25.99</td>
+                <td>150</td>
+                <td>4.5★</td>
+            </tr>
+            <tr>
+                <td>P002</td>
+                <td>Mechanical Keyboard</td>
+                <td>Electronics</td>
+                <td>$89.99</td>
+                <td>75</td>
+                <td>4.8★</td>
+            </tr>
+            <tr>
+                <td>P003</td>
+                <td>Office Chair</td>
+                <td>Furniture</td>
+                <td>$199.99</td>
+                <td>30</td>
+                <td>4.3★</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Form Using Table Layout -->
+    <h2>4. Registration Form Using Table Layout</h2>
+    <form action="/submit" method="POST">
+        <table border="1">
+            <tr>
+                <td><label for="fullname"><strong>Full Name *</strong></label></td>
+                <td><input type="text" id="fullname" name="fullname" required size="30"></td>
+            </tr>
+            <tr>
+                <td><label for="email"><strong>Email Address *</strong></label></td>
+                <td><input type="email" id="email" name="email" required size="30"></td>
+            </tr>
+            <tr>
+                <td><label for="age"><strong>Age *</strong></label></td>
+                <td><input type="number" id="age" name="age" required min="18" max="100"></td>
+            </tr>
+            <tr>
+                <td><label for="country"><strong>Country *</strong></label></td>
+                <td>
+                    <select id="country" name="country" required>
+                        <option value="">Select Country</option>
+                        <option value="india">India</option>
+                        <option value="usa">USA</option>
+                        <option value="uk">UK</option>
+                        <option value="canada">Canada</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Gender *</strong></td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="comments"><strong>Comments</strong></label></td>
+                <td><textarea id="comments" name="comments" rows="3" cols="30"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the terms and conditions *</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Clear">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <!-- Timetable Example -->
+    <h2>5. Class Timetable</h2>
+    <table border="1">
+        <caption><strong>Weekly Class Schedule - Computer Science</strong></caption>
+        <thead>
+            <tr>
+                <th>Time/Day</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>9:00-10:00</td>
+                <td>HTML/CSS</td>
+                <td>JavaScript</td>
+                <td>Database</td>
+                <td>React.js</td>
+                <td>Project Work</td>
+            </tr>
+            <tr>
+                <td>10:00-11:00</td>
+                <td>JavaScript</td>
+                <td>Node.js</td>
+                <td>HTML/CSS</td>
+                <td>Database</td>
+                <td>Project Work</td>
+            </tr>
+            <tr>
+                <td>11:00-12:00</td>
+                <td>Database</td>
+                <td>React.js</td>
+                <td>Node.js</td>
+                <td>JavaScript</td>
+                <td>Revision</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Complex Table with Rowspan and Colspan -->
+    <h2>6. Company Department Structure</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Department</th>
+                <th>Team Lead</th>
+                <th>Team Members</th>
+                <th>Projects</th>
+                <th>Budget</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Development</td>
+                <td>Rajesh Kumar</td>
+                <td>8 Developers</td>
+                <td>Web Application</td>
+                <td>$50,000</td>
+            </tr>
+            <tr>
+                <td>Priya Singh</td>
+                <td>6 Developers</td>
+                <td>Mobile App</td>
+                <td>$35,000</td>
+            </tr>
+            <tr>
+                <td>Testing</td>
+                <td>Ankit Verma</td>
+                <td>4 Testers</td>
+                <td colspan="2">All Projects</td>
+            </tr>
+            <tr>
+                <td>Design</td>
+                <td>Neha Gupta</td>
+                <td>3 Designers</td>
+                <td>UI/UX Design</td>
+                <td>$20,000</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
+```
+
+---
+
+## Table Elements Explained
+
+### Basic Table Tags
+- <table> - Defines the table container
+- <tr> - Table row
+- <td> - Table data cell
+- <th> - Table header cell (bold and centered by default)
+
+### Structural Tags
+- <thead> - Groups header content
+- <tbody> - Groups main content
+- <tfoot> - Groups footer content
+- <caption> - Adds a title to the table
+
+### Advanced Attributes
+- colspan - Merges cells horizontally
+- rowspan - Merges cells vertically
+- border - Adds borders to table
+- align- Horizontal alignment (left/center/right)
+
+---
+
+## Real-time Benefits of Tables
+
+### Data Organization
+- **HR Systems:** Employee directories and payroll data
+- **E-commerce:** Product listings and inventory
+- **Education:** Student records and grade books
+- **Finance:** Transaction records and statements
+
+### User Experience
+- Easy comparison of related data
+- Structured information presentation
+- Quick scanning and reference
+- Consistent data formatting
+
+### Accessibility
+- Screen readers can navigate table structures
+- Proper headers help in understanding data relationships
+- Semantic structure aids in comprehension
+
+This comprehensive table guide shows various real-world applications with proper HTML structure and organization.
+
+
+
+
+
+
+
+
+
+
+
+
+
