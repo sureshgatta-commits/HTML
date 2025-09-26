@@ -1,0 +1,153 @@
+colspan - merges cells horizontally (across columns)
+
+
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Location</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td colspan="2">Shankar</td>
+            <td>NewYork</td>
+        </tr>
+        <tr>
+            <td>Raddhika</td>
+            <td>23</td>
+            <td>Hyderabad</td>
+        </tr>
+    </tbody>
+</table>
+
+
+rowspan - merges cells vertically (across rows)
+
+
+    <table border="1">
+        <thead>
+            <tr>
+            <th>Name</th>
+            <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Charitha</td>
+                <td>23</td>
+            </tr>
+            <tr>
+  
+                <td>26</td>
+            </tr>
+        </tbody>
+
+
+
+EG:-
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Class</th>
+            <th rowspan="3">MVM School</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Radha</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Ankur</td>
+            <td>11</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
+-----------------------------Combination of both-----------------------------
+
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="5">Room Tariff</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3"><b>Room Type</b></td>
+                <td colspan="2"><b>Deluxe</b></td>
+                <td colspan="2"><b>Executive</b></td>
+            </tr>
+            <tr>
+                <td><b>AC</b></td>
+                <td><b>NONAC</b></td>
+                <td><b>AC</b></td>
+                <td><b>NONAC</b></td>
+            </tr>
+            <tr>
+                <td>1500</td>
+                <td>1000</td>
+                <td>2000</td>
+                <td>1500</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+
+
+
+cellspacing -  It is the gap between the cells
+
+
+cellpadding - It is the gap we can give inside a cell for content
+
+
+    <table border="1" cellspacing = "10" cellpadding ="10">
+        <thead>
+            <tr>
+                <th colspan="5">Room Tariff</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3"><b>Room Type</b></td>
+                <td colspan="2"><b>Deluxe</b></td>
+                <td colspan="2"><b>Executive</b></td>
+            </tr>
+            <tr>
+                <td><b>AC</b></td>
+                <td><b>NONAC</b></td>
+                <td><b>AC</b></td>
+                <td><b>NONAC</b></td>
+            </tr>
+            <tr>
+                <td>1500</td>
+                <td>1000</td>
+                <td>2000</td>
+                <td>1500</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+--------------Few Other Tags--------------
+<small>Display secondary information like copyright © 2023</small>
+<big>Make text larger for emphasis but use CSS instead</big>
+<pre>Preserve formatting like code: function hello() { return "World"; }</pre>
+<sub>Create subscripts for formulas: H<sub>2</sub>O</sub>
+<sup>Create superscripts for exponents: E = mc<sup>2</sup></sup>
+<video width="640" height="360" controls src="presentation.mp4">Your browser doesn't support video</video>
+<audio controls autoplay loop src="background-music.mp3">Your browser doesn't support audio</audio>
+
