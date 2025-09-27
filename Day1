@@ -1,115 +1,84 @@
------------------------------------------------Day 1 of HTML(September 19, 2025)------------------------------------------------------
+# 🌐 Day 1: HTML Introduction
+**Date:** September 19, 2025
 
+## 📌 What is HTML?
+HTML - **H**yper**T**ext **M**arkup **L**anguage
 
-HTML - HyperText Markup Language.
+- Foundation of the web
+- Provides skeleton/structure of webpages
+- Defines content and basic layout
 
+## 🛠️ Development Setup
+**Best Practice:** Use VS Code instead of basic text editors
 
-HTML is the foundational building block of the web. 
+### Benefits of VS Code:
+- Syntax highlighting
+- Auto-completion  
+- Error detection
+- Faster coding
 
-It provides the skeleton or structural layer of a webpage, defining its content and basic layout.
-
-While you can write HTML code in a simple text file (and save it with a .html extension), the best practice is to use a dedicated code editor like Visual Studio Code (VS Code).
-
-Editors like VS Code provide essential features such as syntax highlighting, auto-completion, and error detection, which make writing code faster and less error-prone.
-
-
-
-
-
-
-Assignments :-
-
-Install VSCode and send me the screenshot.
-
-Explore some extensions in VSCode to look code beautifully.
-
-# 🌐 Day 1 of HTML
-
-📌 What is a Website?
-
-* A Website is a collection of web pages.
-  Example: Home, About, Contact pages.
+### 📋 Assignments:
+- [ ] Install VSCode and send screenshot
+- [ ] Explore extensions for better code appearance
 
 ---
 
-📌 Elements in a Webpage
+## 🌐 Website Basics
 
-Some common elements we can create in a webpage are:
+### What is a Website?
+A collection of web pages (Home, About, Contact, etc.)
 
-* Button
-* Image
-* Video
-* Text
-* Scrollable text
-* Icons
-* Background image
-* Paragraph
-* Heading
-
-We use HTML tags to create these elements.
-
----
-
-### 📌 Important Points
-
-* HTML is case-insensitive → <H1> and <h1> mean the same.
-* Headings in HTML:
-
-  * <h1> (largest/most important) → <h6> (smallest/least important).
+### Common Webpage Elements:
+- ✅ Button
+- ✅ Image  
+- ✅ Video
+- ✅ Text
+- ✅ Scrollable text
+- ✅ Icons
+- ✅ Background image
+- ✅ Paragraph
+- ✅ Heading
 
 ---
 
-### 📌 Commonly Used Tags
+## 📝 HTML Fundamentals
 
-* <b> → Bold text
-* <i> → Italic text
-* <em> → Emphasized text (similar to italic, but more meaningful)
-* <strong> → Strong importance (similar to bold, but more meaningful)
-* <small> → Smaller text
-* <br> → Line break
+### Key Points:
+- HTML is **case-insensitive** (`<H1>` = `<h1>`)
+- Heading hierarchy: `<h1>` (largest) to `<h6>` (smallest)
 
+### Commonly Used Tags:
+| Tag | Purpose |
+|-----|---------|
+| `<b>` | Bold text |
+| `<i>` | Italic text |
+| `<em>` | Emphasized text |
+| `<strong>` | Strong importance |
+| `<small>` | Smaller text |
+| `<br>` | Line break |
 
+---
 
-### Practiced Code in Class
+## 💻 Code Practice
 
-
-<html> 
-
+```html
+<html>
   <h1>This is the first day of our HTML course. It is interesting</h1>
   <h2>This is the first day of our HTML course. It is interesting</h2>
   <h3>This is the first day of our HTML course. It is interesting</h3>
-  <h4>This is the first day of our HTML course. It is interesting</h4>
-  <h5>This is the first day of our HTML course. It is interesting</h5>
-  <h6>This is the first day of our HTML course. It is interesting</h6>
-
+  
   <p><b>This is the first day</b> of our HTML course. It is interesting</p>
-
-  <b>This is the first day of our HTML course. It is interesting (bold)</b>
-  <br>
-
-  <i>This is the first day of our HTML course. It is interesting (italic)</i>
-  <br>
-
-  <small>This is the first day of our HTML course. It is interesting (small)</small>
-  <br>
-
-  <strong>This is the first day of our HTML course. It is interesting (strong)</strong>
-  <br>
-
-  <em>This is the first day of our HTML course. It is interesting (em)</em>
-  <br>
-
-  <button>Click me</button>
-  <br> 
-
+  
+  <b>Bold text</b><br>
+  <i>Italic text</i><br>
+  <small>Small text</small><br>
+  <strong>Strong text</strong><br>
+  <em>Emphasized text</em><br>
+  
+  <button>Click me</button><br>
+  
   <img src="PK.jpg">
-  <img src="https://static.toiimg.com/thumb/msid-110723572,imgsize-1551804,width-400,resizemode-4/110723572.jpg">
-  <br>
-
+  <img src="https://example.com/image.jpg">
+  
   <a href="https://google.com" target="_new">Go to Google</a>
-
 </html>
-
-
-
-
