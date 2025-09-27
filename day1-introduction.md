@@ -37,7 +37,7 @@ A collection of web pages (Home, About, Contact, etc.)
 - ✅ Icons
 - ✅ Background image
 - ✅ Paragraph
-- ✅ Heading
+- ✅ Headings
 
 ---
 
