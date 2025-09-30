@@ -1,4 +1,5 @@
 
+
 ## 🔘 `step` Attribute
 
 **Definition:** Controls how much the value increases or decreases.
@@ -10,7 +11,6 @@
 - `type="datetime-local"` → e.g., scheduling
 
 **Examples:**
-
 ```html
 <!-- Number input: steps of 5 -->
 <input type="number" min="0" max="100" step="5">
@@ -34,7 +34,6 @@
 **Works With:** Any HTML element.
 
 **Examples:**
-
 ```html
 <!-- Hidden paragraph -->
 <p hidden>This message is hidden.</p>
@@ -54,7 +53,6 @@
 - `<input>` → specific fields like `email`, `name`, `password`, `cc-number`
 
 **Examples:**
-
 ```html
 <!-- Enable autocomplete -->
 <form autocomplete="on">
@@ -82,7 +80,6 @@
 - `id`, `class` → for styling and scripting
 
 **Examples:**
-
 ```html
 <!-- Submit button -->
 <button type="submit">Submit</button>
@@ -100,7 +97,9 @@
 <button name="action" value="save">Save</button>
 
 <!-- Button linked to external form -->
-<form id="myForm"></form>
+<form id="myForm">
+  <input type="text" name="username">
+</form>
 <button type="submit" form="myForm">Submit Form</button>
 
 <!-- Autofocus button -->
@@ -116,7 +115,6 @@
 **Works With:** Any content—text, images, forms, etc.
 
 **Examples:**
-
 ```html
 <!-- Grouping content -->
 <div>
@@ -140,7 +138,6 @@
 **Works With:** Inline content like text, icons, or links.
 
 **Examples:**
-
 ```html
 <!-- Highlight part of a sentence -->
 <p>Welcome, <span>Suresh</span>!</p>
@@ -151,19 +148,37 @@
 
 ---
 
+## 🔗 `form` Attribute
+
+**Definition:** Connects an input or button to a specific `<form>` using its `id`, even if placed outside the form.
+
+**Works With:** `<button>`, `<input>`, `<select>`, `<textarea>`
+
+**Example:**
+```html
+<form id="MyForm">
+  <input type="text" name="username" placeholder="Enter your name">
+</form>
+
+<!-- Button outside the form but still submits it -->
+<button type="submit" form="MyForm">Submit</button>
+```
+
+---
+
 ## 🎨 Font Awesome Icons
 
 **Definition:** A library used to add icons using HTML tags.
 
 **Works With:** `<i>` tag + class names.
 
-**Examples:**
-
+**Include in `<head>`:**
 ```html
-<!-- Include in <head> -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+```
 
-<!-- Icons -->
+**Examples:**
+```html
 <i class="fas fa-heart"></i> I love HTML  
 <i class="fab fa-github"></i> GitHub  
 <i class="fa-brands fa-instagram"></i> Instagram  
@@ -171,3 +186,6 @@
 ```
 
 ---
+
+```
+
